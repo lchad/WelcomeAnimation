@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="guide_bg">#fff8f8f8</color>
+    <color name="btn_unable_press_color">#fcabab</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_normal_color">#f86d6f</color>
+    <color name="btn_pressed_color">#fec3c4</color>
+    <color name="btn_enter_text">#f6f6f6</color>
+</resources>

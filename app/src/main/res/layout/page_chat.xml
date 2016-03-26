@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlChatContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/chat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:src="@drawable/guide_chat_text"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chat_head"
+            android:alpha="0"
+            android:paddingBottom="40dp"
+            android:src="@drawable/chat_content"/>
+
+        <ImageView
+            android:id="@+id/chat_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:alpha="0"
+            android:src="@drawable/chat_headportrait"/>
+
+        <ImageView
+            android:id="@+id/chat_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/chat_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chat_line"/>
+
+        <View
+            android:id="@+id/chat_background"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/guide_chat_line_height"
+            android:layout_alignBottom="@+id/chat_green"
+            android:layout_alignLeft="@+id/chat_line"
+            android:layout_alignRight="@+id/chat_line"
+            android:layout_marginBottom="33dp"
+            android:layout_toRightOf="@id/chat_content"
+            android:background="@color/guide_bg"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/chat_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@id/chat_head"
+            android:alpha="0"
+            android:paddingBottom="220dp"
+            android:src="@drawable/chat_y"/>
+
+        <ImageView
+            android:id="@+id/chat_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@id/chat_content"
+            android:alpha="0"
+            android:src="@drawable/chat_b"/>
+
+        <ImageView
+            android:id="@+id/chat_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@id/chat_head"
+            android:alpha="0"
+            android:paddingTop="200dp"
+            android:src="@drawable/chat_g"/>
+    </RelativeLayout>
+</RelativeLayout>

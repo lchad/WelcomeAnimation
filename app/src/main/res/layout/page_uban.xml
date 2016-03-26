@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlUBanContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/uban_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:src="@drawable/guide_uban_text"/>
+
+
+    <ImageView
+        android:id="@+id/uban_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/items_line"/>
+
+    <View
+        android:id="@+id/uban_backgroud"
+        android:layout_width="240dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:background="@color/guide_bg"/>
+
+
+    <ImageView
+        android:id="@+id/uban_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="140dp"
+        android:paddingRight="80dp"
+        android:src="@drawable/items_red"/>
+
+    <ImageView
+        android:id="@+id/uban_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="190dp"
+        android:paddingLeft="120dp"
+        android:src="@drawable/items_message"/>
+
+    <ImageView
+        android:id="@+id/uban_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/uban_line"
+        android:layout_alignLeft="@+id/uban_line"
+        android:alpha="0"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/items_g"/>
+
+    <ImageView
+        android:id="@+id/uban_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingLeft="50dp"
+        android:paddingTop="110dp"
+        android:src="@drawable/items_b"/>
+
+    <ImageView
+        android:id="@+id/uban_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/uban_content"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="50dp"
+        android:src="@drawable/items_y"/>
+</RelativeLayout>

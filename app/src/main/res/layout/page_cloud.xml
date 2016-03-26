@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCloudContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cloud_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:src="@drawable/guide_pan_text"/>
+
+    <ImageView
+        android:id="@+id/cloud_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="200dp"
+        android:src="@drawable/cloud_line"/>
+
+    <View
+        android:id="@+id/cloud_line_background"
+        android:layout_width="255dp"
+        android:layout_height="275dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/guide_bg"
+        android:paddingBottom="200dp"/>
+
+    <ImageView
+        android:id="@+id/cloud_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:src="@drawable/cloud_person"/>
+
+    <ImageView
+        android:id="@+id/cloud_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="30dp"
+        android:src="@drawable/cloud_headsculpture"/>
+    <ImageView
+        android:id="@+id/cloud_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cloud_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:alpha="0"
+        android:src="@drawable/cloud_phone"/>
+</RelativeLayout>

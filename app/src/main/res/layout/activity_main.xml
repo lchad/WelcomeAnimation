@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guide_bg">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="gone"
+            style="@style/guide_btn"
+            android:background="@drawable/guide_btn_bg_left"
+            android:textColor="#ffffff"
+            android:id="@+id/btnLogin"
+            android:text="@string/splash_login"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:visibility="gone"
+            style="@style/guide_btn"
+            android:background="@drawable/guide_btn_bg_right"
+            android:textColor="@drawable/guide_btn_text_selector"
+            android:id="@+id/btnPsw"
+            android:text="@string/login_new_user"/>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_enter"
+        android:layout_above="@+id/chat_smile_dot"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        style="@style/enter_button_style"
+        android:text="@string/guide_enter" />
+
+    <com.example.liuchad.testviewanimation.ImageDotView
+        android:id="@+id/chat_smile_dot"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:textColor="#999999"
+        android:textSize="17sp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/guide_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

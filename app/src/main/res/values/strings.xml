@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViewAnimator</string>
+    <string name="splash_login">立即登录</string>
+    <string name="login_new_user">新用户</string>
+    <string name="guide_skip">跳过</string>
+    <string name="guide_enter">进入应用</string>
+</resources>

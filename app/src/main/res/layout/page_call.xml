@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCallContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/call_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:src="@drawable/guide_call_text"/>
+
+
+    <ImageView
+        android:id="@+id/call_main"
+        android:layout_width="256dp"
+        android:layout_height="267dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/call_line"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/call_background_tl"
+                android:layout_width="156dp"
+                android:layout_height="134dp"
+                android:background="@color/guide_bg"/>
+
+            <View
+                android:id="@+id/call_background_tr"
+                android:layout_width="100dp"
+                android:layout_height="134dp"
+                android:background="@color/guide_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/call_background_bl"
+                android:layout_width="156dp"
+                android:layout_height="133dp"
+                android:background="@color/guide_bg"/>
+
+            <View
+                android:id="@+id/call_background_br"
+                android:layout_width="100dp"
+                android:layout_height="133dp"
+                android:background="@color/guide_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/call_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:src="@drawable/call_red"/>
+
+    <ImageView
+        android:id="@+id/call_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/call_main"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="70dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/call_b"/>
+
+    <ImageView
+        android:id="@+id/call_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/call_main"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:paddingLeft="35dp"
+        android:src="@drawable/call_g"/>
+
+
+    <ImageView
+        android:id="@+id/call_yellow_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:paddingBottom="10dp"
+        android:paddingLeft="260dp"
+        android:src="@drawable/call_y1"/>
+
+    <ImageView
+        android:id="@+id/call_yellow_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/call_main"
+        android:layout_alignLeft="@id/call_main"
+        android:alpha="0"
+        android:paddingBottom="45dp"
+        android:paddingLeft="35dp"
+        android:src="@drawable/call_y2"/>
+
+</RelativeLayout>
