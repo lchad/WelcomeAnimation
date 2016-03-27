@@ -44,6 +44,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         isInit = true;
         dotView.setSelectBitmap(R.drawable.xx_hh_bq_fy_red);
         dotView.setImageCount(GUIDE_PAGE_COUNT);
+
+        initListeners();
+        vpGuide.setAdapter(new PagerAdapter() {
+            @Override
+            public int getCount() {
+                return pageViews.size();
+            }
+
+            @Override
+            public boolean isViewFromObject(View view, Object object) {
+                return view == object;
+            }
+
+            @Override
+            public Object instantiateItem(ViewGroup container, int position) {
+                container.addView(pageViews.get(position));
+                return pageViews.get(position);
+            }
+
+            @Override
+            public void destroyItem(ViewGroup container, int position, Object object) {
+                container.removeView(pageViews.get(position));
+            }
+        });
+        addAnimation(0);
+    }
+
+    private void initListeners() {
         btnLogin.setOnClickListener(this);
         btnPsw.setOnClickListener(this);
         btnEnter.setOnClickListener(this);
@@ -80,29 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onPageScrollStateChanged(int state) {
             }
         });
-        vpGuide.setAdapter(new PagerAdapter() {
-            @Override
-            public int getCount() {
-                return pageViews.size();
-            }
-
-            @Override
-            public boolean isViewFromObject(View view, Object object) {
-                return view == object;
-            }
-
-            @Override
-            public Object instantiateItem(ViewGroup container, int position) {
-                container.addView(pageViews.get(position));
-                return pageViews.get(position);
-            }
-
-            @Override
-            public void destroyItem(ViewGroup container, int position, Object object) {
-                container.removeView(pageViews.get(position));
-            }
-        });
-        addAnimation(0);
     }
 
     private void initPageViews() {
@@ -173,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             .dp()
             .translationX(-255, 0)
             .alpha(0, 1)
-            .startDelay(2000)
+            .startDelay(2800)
             .duration(600)
             .start();
 
