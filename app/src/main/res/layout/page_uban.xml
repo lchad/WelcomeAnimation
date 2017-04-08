@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rlUBanContainer"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rlUBanContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
     <ImageView
         android:id="@+id/uban_text"
@@ -18,6 +19,7 @@
 
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,6 +35,7 @@
 
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,6 +47,7 @@
         android:src="@drawable/items_red"/>
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,17 +59,19 @@
         android:src="@drawable/items_message"/>
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/uban_line"
         android:layout_alignLeft="@+id/uban_line"
         android:alpha="0"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:paddingLeft="5dp"
         android:src="@drawable/items_g"/>
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,6 +83,7 @@
         android:src="@drawable/items_b"/>
 
     <ImageView
+        tools:alpha="100"
         android:id="@+id/uban_yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

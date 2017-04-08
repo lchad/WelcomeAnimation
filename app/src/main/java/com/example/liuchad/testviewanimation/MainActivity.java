@@ -6,23 +6,33 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
-import butterknife.Bind;
-import butterknife.ButterKnife;
+
 import com.github.florent37.viewanimator.ViewAnimator;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    @Bind(R.id.vp_guide) ViewPager vpGuide;
-    @Bind(R.id.btnLogin) Button btnLogin;
-    @Bind(R.id.btnPsw) Button btnPsw;
-    @Bind(R.id.btn_enter) Button btnEnter;
-    @Bind(R.id.tv_skip) TextView tvSkip;
-    @Bind(R.id.chat_smile_dot) ImageDotView dotView;
+    @Bind(R.id.vp_guide)
+    ViewPager vpGuide;
+    @Bind(R.id.btnLogin)
+    Button btnLogin;
+    @Bind(R.id.btnPsw)
+    Button btnPsw;
+    @Bind(R.id.btn_enter)
+    Button btnEnter;
+    @Bind(R.id.tv_skip)
+    TextView tvSkip;
+    @Bind(R.id.chat_smile_dot)
+    ImageDotView dotView;
 
     private List<View> pageViews;
 
@@ -33,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         this.getSupportActionBar().hide();
         ButterKnife.bind(this);
@@ -161,40 +173,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewGroup.setVisibility(View.VISIBLE);
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.cloud_text))
-            .alpha(0, 1)
-            .startDelay(200)
-            .duration(500)
-            .start();
+                .animate(viewGroup.findViewById(R.id.cloud_text))
+                .alpha(0, 1)
+                .startDelay(200)
+                .duration(500)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.cloud_head))
-            .alpha(0, 1)
-            .startDelay(1000)
-            .duration(500)
-            .start();
+                .animate(viewGroup.findViewById(R.id.cloud_head))
+                .alpha(0, 1)
+                .startDelay(1000)
+                .duration(500)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.cloud_phone))
-            .dp()
-            .translationX(-255, 0)
-            .alpha(0, 1)
-            .startDelay(2800)
-            .duration(600)
-            .start();
+                .dp()
+                .translationX(-255, 0)
+                .alpha(0, 1)
+                .startDelay(2800)
+                .duration(600)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.cloud_main))
-            .alpha(0, 1)
-            .startDelay(1500)
-            .duration(600)
-            .start();
+                .animate(viewGroup.findViewById(R.id.cloud_main))
+                .alpha(0, 1)
+                .startDelay(1500)
+                .duration(600)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.cloud_line_background))
-            .dp()
-            .translationX(0, 255)
-            .startDelay(2000)
-            .duration(600)
-            .start();
+                .dp()
+                .translationX(0, 255)
+                .startDelay(2000)
+                .duration(600)
+                .start();
     }
 
     private void addChatAnimation() {
@@ -207,54 +219,54 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewGroup.setVisibility(View.VISIBLE);
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_text))
-            .alpha(0, 1)
-            .startDelay(200)
-            .duration(500)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_text))
+                .alpha(0, 1)
+                .startDelay(200)
+                .duration(500)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_head))
-            .alpha(0, 1)
-            .startDelay(400)
-            .duration(400)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_head))
+                .alpha(0, 1)
+                .startDelay(400)
+                .duration(400)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_content))
-            .alpha(0, 1)
-            .startDelay(800)
-            .duration(1600)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_content))
+                .alpha(0, 1)
+                .startDelay(800)
+                .duration(1600)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_background))
-            .dp()
-            .translationY(0, 185)
-            .startDelay(2000)
-            .duration(2000)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_background))
+                .dp()
+                .translationY(0, 185)
+                .startDelay(2000)
+                .duration(2000)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_yellow))
-            .alpha(0, 1)
-            .startDelay(2000)
-            .duration(800)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_yellow))
+                .alpha(0, 1)
+                .startDelay(2000)
+                .duration(800)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_blue))
-            .alpha(0, 1)
-            .startDelay(2800)
-            .duration(800)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_blue))
+                .alpha(0, 1)
+                .startDelay(2800)
+                .duration(800)
+                .start();
 
         ViewAnimator
-            .animate(viewGroup.findViewById(R.id.chat_green))
-            .alpha(0, 1)
-            .startDelay(3600)
-            .duration(800)
-            .start();
+                .animate(viewGroup.findViewById(R.id.chat_green))
+                .alpha(0, 1)
+                .startDelay(3600)
+                .duration(800)
+                .start();
     }
 
     private void addCallAnimation() {
@@ -270,55 +282,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewGroup.setVisibility(View.VISIBLE);
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_text))
-            .alpha(0, 1)
-            .startDelay(200)
-            .duration(500)
-            .start();
+                .alpha(0, 1)
+                .startDelay(200)
+                .duration(500)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_head))
-            .alpha(0, 1)
-            .startDelay(500)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(500)
+                .duration(400)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_background_tl))
-            .dp()
-            .translationY(0, -134)
-            .startDelay(1000)
-            .duration(800)
-            .start();
+                .dp()
+                .translationY(0, -134)
+                .startDelay(1000)
+                .duration(800)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_background_tr))
-            .dp()
-            .translationY(0, 134)
-            .startDelay(1000)
-            .duration(800)
-            .start();
+                .dp()
+                .translationY(0, 134)
+                .startDelay(1000)
+                .duration(800)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_background_bl))
-            .dp()
-            .translationY(0, -156)
-            .startDelay(1000)
-            .duration(800)
-            .start();
+                .dp()
+                .translationY(0, -156)
+                .startDelay(1000)
+                .duration(800)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.call_background_br))
-            .dp()
-            .translationY(0, 133)
-            .startDelay(1000)
-            .duration(800)
-            .start();
+                .dp()
+                .translationY(0, 133)
+                .startDelay(1000)
+                .duration(800)
+                .start();
 
         ViewAnimator
-            .animate(
-                viewGroup.findViewById(R.id.call_yellow_one),
-                viewGroup.findViewById(R.id.call_yellow_two),
-                viewGroup.findViewById(R.id.call_blue),
-                viewGroup.findViewById(R.id.call_green))
-            .alpha(0, 1)
-            .startDelay(1400)
-            .duration(500)
-            .start();
+                .animate(
+                        viewGroup.findViewById(R.id.call_yellow_one),
+                        viewGroup.findViewById(R.id.call_yellow_two),
+                        viewGroup.findViewById(R.id.call_blue),
+                        viewGroup.findViewById(R.id.call_green))
+                .alpha(0, 1)
+                .startDelay(1400)
+                .duration(500)
+                .start();
     }
 
     private void addUBanAnimation() {
@@ -331,47 +343,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewGroup.setVisibility(View.VISIBLE);
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_text))
-            .alpha(0, 1)
-            .startDelay(200)
-            .duration(500)
-            .start();
+                .alpha(0, 1)
+                .startDelay(200)
+                .duration(500)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_head))
-            .alpha(0, 1)
-            .startDelay(500)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(500)
+                .duration(400)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_content))
-            .alpha(0, 1)
-            .startDelay(800)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(800)
+                .duration(400)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_backgroud))
-            .dp()
-            .translationX(0, 240)
-            .startDelay(1400)
-            .duration(1000)
-            .start();
+                .dp()
+                .translationX(0, 240)
+                .startDelay(1400)
+                .duration(1000)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_green))
-            .alpha(0, 1)
-            .startDelay(1500)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(1500)
+                .duration(400)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_blue))
-            .alpha(0, 1)
-            .startDelay(1700)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(1700)
+                .duration(400)
+                .start();
 
         ViewAnimator.animate(viewGroup.findViewById(R.id.uban_yellow))
-            .alpha(0, 1)
-            .startDelay(2200)
-            .duration(400)
-            .start();
+                .alpha(0, 1)
+                .startDelay(2200)
+                .duration(400)
+                .start();
     }
 
     private ViewGroup getChatPage() {
